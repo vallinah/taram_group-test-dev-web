@@ -1,4 +1,5 @@
 using backend.Repositories;
+using backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 // Dependency Injection
 builder.Services.AddSingleton<IContactRepository, InMemoryContactRepository>();
+builder.Services.AddSingleton<IImportService, ImportService>();
 
 
 var app = builder.Build();
