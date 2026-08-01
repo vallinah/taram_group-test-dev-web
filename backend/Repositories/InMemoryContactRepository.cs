@@ -4,12 +4,16 @@ namespace backend.Repositories;
 
 public class InMemoryContactRepository : IContactRepository
 {
+    // Temporary in-memory storage.
+    // Replace by MongoDB implementation in production.
     private readonly List<Contact> contacts = new();
 
 
-    public Task<IEnumerable<Contact>> GetAllAsync()
+    public Task<List<Contact>> GetAllAsync()
     {
-        return Task.FromResult(contacts.AsEnumerable());
+        return Task.FromResult(
+            contacts.ToList()
+        );
     }
 
 

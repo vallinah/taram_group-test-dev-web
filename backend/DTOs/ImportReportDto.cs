@@ -15,6 +15,7 @@ public class ImportReportDto
 
 public class ImportErrorDto
 {
+    public int Line { get; set; }
     public string ExternalId { get; set; } = null!;
 
     public string Reason { get; set; } = null!;

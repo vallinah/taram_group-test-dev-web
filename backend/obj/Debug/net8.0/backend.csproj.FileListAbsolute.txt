@@ -32,3 +32,4 @@
 /home/otisoa-vallinah/Documents/job/taram/taram_group-test-dev-web/backend/obj/Debug/net8.0/backend.pdb
 /home/otisoa-vallinah/Documents/job/taram/taram_group-test-dev-web/backend/obj/Debug/net8.0/backend.genruntimeconfig.cache
 /home/otisoa-vallinah/Documents/job/taram/taram_group-test-dev-web/backend/obj/Debug/net8.0/ref/backend.dll
+/home/otisoa-vallinah/Documents/job/taram/taram_group-test-dev-web/backend/bin/Debug/net8.0/Data/export_erp_clients.json

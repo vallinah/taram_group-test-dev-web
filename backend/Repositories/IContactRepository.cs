@@ -4,7 +4,7 @@ namespace backend.Repositories;
 
 public interface IContactRepository
 {
-    Task<IEnumerable<Contact>> GetAllAsync();
+    Task<List<Contact>> GetAllAsync();
 
     Task<Contact?> GetByIdAsync(string id);
 
