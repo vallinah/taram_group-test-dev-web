@@ -18,8 +18,20 @@ builder.Services.AddSingleton<IContactRepository, InMemoryContactRepository>();
 builder.Services.AddSingleton<IImportService, ImportService>();
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("VuePolicy", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
+app.UseCors("VuePolicy");
 
 // HTTP pipeline
 if (app.Environment.IsDevelopment())

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #125aa0;
+}
+
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+th {
+    background: #1976d2;
+    color: white;
+    padding: 10px;
+}
+
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tr:hover {
+    background: #f5f5f5;
+}
+
+
+.success {
+    color: green;
+    background: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.error {
+    color: #b71c1c;
+    background: #ffebee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.pagination {
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
